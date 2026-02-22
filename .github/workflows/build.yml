@@ -30,7 +30,7 @@ jobs:
         fetch-depth: 2
         submodules:  ignore
     
-    -name: submodules
+    - name: submodules
       run: |
         cmd.exe /c rmdir /s libusb
         cmd.exe /c rmdir /s pthread-win32
