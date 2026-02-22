@@ -13,7 +13,7 @@ if (NOT MSVC)
     message(ERROR "CMakeLists.txt does only support the MSVC compiler")
 endif()
 # allow overriding cmake options with standard variables - from a project including this one
-cmake_policy(SET CMP0077 NEW)  # set(CMAKE_POLICY_DEFAULT_CMP0077 NEW)
+#cmake_policy(SET CMP0077 NEW)  # set(CMAKE_POLICY_DEFAULT_CMP0077 NEW)
 
 set(PTHREADS4W_VERSION 3)
 add_subdirectory(pthread-win32)
