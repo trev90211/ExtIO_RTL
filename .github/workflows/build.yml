@@ -28,7 +28,16 @@ jobs:
       uses: actions/checkout@v5
       with:
         fetch-depth: 2
-        submodules:  recursive
+        submodules:  ignore
+    
+    -name: submodules
+      run |
+        rmdir /s libusb
+        rmdir /s pthread-win32
+        rmdir /s librtlsdr 
+        git clone https://github.com/trev90212/librtlsdr
+        git clone https://github.com/trev90210/libusb 
+        git xlone https://github.com/trev90210/pthread-win32
 
     - name: Configure Visual Studio and CMake
       working-directory: ${{runner.workspace}}
