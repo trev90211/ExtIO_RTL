@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.2.0)
+cmake_minimum_required(VERSION 3.15...3.19)
 # required to enable MSVC_RUNTIME_LIBRARY
 cmake_policy(SET CMP0091 NEW)
 # set(CMAKE_POLICY_DEFAULT_CMP0091 NEW)
