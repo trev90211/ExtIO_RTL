@@ -32,12 +32,12 @@ jobs:
     
     -name: submodules
       run: |
-        rmdir /s libusb
-        rmdir /s pthread-win32
-        rmdir /s librtlsdr 
-        git clone https://github.com/trev90212/librtlsdr
-        git clone https://github.com/trev90210/libusb 
-        git xlone https://github.com/trev90210/pthread-win32
+        cmd.exe /c rmdir /s libusb
+        cmd.exe /c rmdir /s pthread-win32
+        cmd.exe /c rmdir /s librtlsdr 
+        cmd.exe /c git clone https://github.com/trev90212/librtlsdr
+        cmd.exe /c git clone https://github.com/trev90210/libusb 
+        cmd.exe /c git clone https://github.com/trev90210/pthread-win32
 
     - name: Configure Visual Studio and CMake
       working-directory: ${{runner.workspace}}
