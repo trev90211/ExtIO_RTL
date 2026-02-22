@@ -31,7 +31,7 @@ jobs:
         submodules:  ignore
     
     -name: submodules
-      run |
+      run: |
         rmdir /s libusb
         rmdir /s pthread-win32
         rmdir /s librtlsdr 
